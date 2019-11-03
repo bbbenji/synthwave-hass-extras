@@ -9,12 +9,12 @@ This is an extra for the [Synthwave Home Assistant theme](https://github.com/bbb
 
 * Find your homeassistant directory containing your configuration (let's say `~/.homeassistant/`)
 * Change into `~/.homeassistant/www` (create the `www` directory, if it does not exist, you then might have to restart HA)
-* `$ wget https://raw.githubusercontent.com/bbbenji/synthwave-hass-extras/master/dist/synthwave.js` downloads the `.js` file directly where it should reside
+* `$ wget https://raw.githubusercontent.com/bbbenji/synthwave-hass-extras/master/dist/synthwave-hass-extras.js` downloads the `.js` file directly where it should reside
 * Add the following to the top of your UI Lovelace configuration (means either via Config UI or .yaml)
 ``` yaml
 resources:
   - type: js
-    url: /local/synthwave.js
+    url: /local/synthwave-hass-extras.js
 ```
 
 **Screenshots**
