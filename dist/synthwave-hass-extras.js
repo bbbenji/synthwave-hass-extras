@@ -1,3 +1,9 @@
+console.info(
+  `%c synthwave-hass-extras \n%c     Version 0.2.2     `,
+  "color: #f92aad; font-weight: bold; background: #241b2f",
+  "color: #ffffff; font-weight: bold; background: #2a2139"
+);
+
 const primaryColor = '#f92aad';
 const synthwaveGradient = 'linear-gradient(to right, #fc28a8, #03edf9)';
 
