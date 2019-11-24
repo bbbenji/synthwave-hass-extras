@@ -1,10 +1,11 @@
 console.info(
   `%c synthwave-hass-extras \n%c     Version 0.2.2     `,
-  "color: #ffffff; font-weight: bold; background: #241b2f",
-  "color: #ffffff; font-weight: bold; background: #f92aad"
+  "color: #f4eee4; font-weight: bold; background: #241b2f",
+  "color: #f4eee4; font-weight: bold; background: #f92aad"
 );
 
-const primaryColor = '#f92aad';
+const primaryColor = '#f4eee4';
+const secondaryColor = '#f92aad';
 const synthwaveGradient = 'linear-gradient(to right, #fc28a8, #03edf9)';
 
 let hacsInterval = null;
@@ -30,12 +31,12 @@ setTimeout(function () {
             // Title
             const title = sidebar.querySelector('div.menu > span')
             title.style.textShadow = '0 0 2px #393a33, 0 0 35px #ffffff44, 0 0 8px #f39f0575, 0 0 2px #f39f0575'
-            title.style.color = '#f4eee4'
+            title.style.color = primaryColor
           // const hui_root = lovelace.querySelector('hui-root').shadowRoot
           //   // Paper Tabs
           //   const tabs = hui_root.querySelector('paper-tab.iron-selected')
           //   tabs.style.textShadow = '0 0 2px #393a33, 0 0 35px #ffffff44, 0 0 8px #f39f0575, 0 0 2px #f39f0575'
-          //   tabs.style.color = '#f4eee4'
+          //   tabs.style.color = primaryColor
           // const hui_view = hui_root.querySelector('hui-view').shadowRoot
           //   // Custom Cards - Vertical
           //   const hui_vertical_stack_card = hui_view.querySelector('hui-vertical-stack-card').shadowRoot
@@ -80,7 +81,7 @@ function applyStyles() {
   
   // Label classes eg. https://www.home-assistant.io/lovelace/entities/#label
   queryShadow(document, el => el.className === 'label')
-    .forEach(el => (el.style.color = '#ffffff'));
+    .forEach(el => (el.style.color = primaryColor));
 
   // Navigation Menu Icon
   queryShadow(document, el => el.className === 'menu')
@@ -132,15 +133,15 @@ function detectHacs() {
 function applyHacsStyles(hacsIframe) {
   let styles = `
     a.actionlink {
-      color: ${primaryColor} !important;
+      color: ${secondaryColor} !important;
     }
     
     a.hacsbutton {
-      background-color: ${primaryColor} !important;
+      background-color: ${secondaryColor} !important;
     }
     
     .pending-upgrade {
-      color: ${primaryColor} !important;
+      color: ${secondaryColor} !important;
     }
   `;
 
