@@ -29,7 +29,7 @@ setTimeout(function () {
           // Sidebar
           const sidebar = main.querySelector('ha-sidebar').shadowRoot
             // Title
-            const title = sidebar.querySelector('div.menu > span')
+            const title = sidebar.querySelector('div.menu')
             title.style.textShadow = '0 0 2px #393a33, 0 0 35px #ffffff44, 0 0 8px #f39f0575, 0 0 2px #f39f0575'
             title.style.color = primaryColor
           // const hui_root = lovelace.querySelector('hui-root').shadowRoot
